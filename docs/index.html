@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="default">
+<head>
+	<meta name="generator" content="Hugo 0.24.1" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="base-url" content="/">
+    <link type="image/png" href="https://gw.alipayobjects.com/zos/rmsportal/tRXQtrTrncqqhetSGTQP.png" rel="shortcut icon" />
+    <base href="/">
+    <link rel="stylesheet" href="/sofastack.github.io/css/sofa.css" rel="stylesheet">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_18677_3gesaak2gctyb9.css">
+    <link href="//a.alipayobjects.com/g/lark/lark-markdown/1.3.18/default.css" rel="stylesheet">
+    <link href="https://gw.alipayobjects.com/os/skylark/KIxlVLTkLQVFFoYBWDbT.css" rel="stylesheet">
+    <link href="https://gw.alipayobjects.com/os/skylark/FEJbjjFlOklxrFRcJlEt.css" rel="stylesheet">
+    <title>sofastack</title>
+    <script src="https://gw.alipayobjects.com/os/skylark/lzusIxsuPvIxUYowbfNY.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://gw.alipayobjects.com/os/skylark/DNXLotCBHDrtZnOcOSgz.js" type="text/javascript" charset="utf-8"></script>
+  </head>
+<body data-url="/" class="theme1">
+    <div class="header">
+  <div>
+    <div class="header-wrapper">
+      <div class="header-logo">
+        <a href=/sofastack.github.io>
+          <img src="https://gw.alipayobjects.com/zos/rmsportal/tXhjeqVBFJnDSGScZrcW.png" alt="">
+        </a>
+      </div>
+      <ul class="sofa-menu ant-menu ant-menu-horizontal ant-menu-light ant-menu-root" role="menu">
+          <li class="ant-menu-item sofa-menu-item  ">
+              <div class="sofa-menu-item-text">
+                  <a href="/sofastack.github.io/docs">文档</a>
+                  <a href="https://github.com/alipay">Github</a>
+              </div>
+          </li>
+      </ul>
+      <div class="sofa-menu-right pull-right">
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="main">
+    <div class="pg-artical " id="pg-artical">
+        <div class="wrap">
+            <div class="nav-section">
+                <div class="navbar">
+                    <span class="larkicon larkicon-toc"></span>
+                </div>
+                <nav class="nav-container">
+                    <ul class="catalog">
+        <li class="current-book">
+          <span class="name">SOFA-ARK</span>
+        
+
+        </li>
+        
+        <aside id="sidebar" role="navigation">
+  <div class="inner">
+    <li class="nav-item depth1 "><span href="" class="">sidebar.docs.introduction</span></li><li class="nav-item depth2 "><a href="sofastack.github.io/docs/index.html" class="">sidebar.docs.overview</a></li><li class="nav-item depth1 "><span href="" class="">sidebar.docs.quick_start</span></li><li class="nav-item depth2 "><a href="sofastack.github.io/docs/ark-plugin-demo.html" class="">sidebar.docs.ark-plugin-demo</a></li><li class="nav-item depth2 "><a href="sofastack.github.io/docs/ark-demo.html" class="">sidebar.docs.ark-demo</a></li><li class="nav-item depth1 "><span href="" class="">sidebar.docs.user_guide</span></li><li class="nav-item depth2 "><a href="sofastack.github.io/docs/terminology.html" class="">sidebar.docs.terminology</a></li><li class="nav-item depth2 "><a href="sofastack.github.io/docs/ark-jar.html" class="">sidebar.docs.ark_jar</a></li><li class="nav-item depth2 "><a href="sofastack.github.io/docs/ark-plugin.html" class="">sidebar.docs.ark_plugin</a></li><li class="nav-item depth2 "><a href="sofastack.github.io/docs/ark-biz.html" class="">sidebar.docs.ark_biz</a></li><li class="nav-item depth1 "><span href="" class="">sidebar.docs.develop_guide</span></li><li class="nav-item depth2 "><a href="sofastack.github.io/docs/startup.html" class="">sidebar.docs.startup</a></li><li class="nav-item depth2 "><a href="sofastack.github.io/docs/plugin.html" class="">sidebar.docs.plugin</a></li><li class="nav-item depth2 "><a href="sofastack.github.io/docs/classloader.html" class="">sidebar.docs.classloader</a></li>
+  </div>
+</aside>
+      
+    </ul>
+  </nav>
+</div>
+        <div class="main-container">
+          <div id="page-toc"></div>
+          <div class="artical-section larksite">
+    <div class="doc-article">
+      <article class="doc-article-inner">
+        <div class="typo">
+          <h1 class="typo-title" itemprop="title">
+          产品概述
+          </h1>
+          <div class="typo-content">
+            <h2 id="产品描述" class="article-heading"><a href="#产品描述" class="headerlink" title="产品描述"></a>产品描述<a class="article-anchor" href="#产品描述" aria-hidden="true"></a></h2><p>SOFAArk 是一款基于 Java 实现的轻量级类隔离加载容器，主要是为应用程序提供类隔离和依赖包隔离的能力，由蚂蚁金服公司开源贡献；基于 <a href="https://docs.spring.io/spring-boot/docs/current/reference/html/executable-jar.html#executable-jar-jar-file-structure" target="_blank" rel="noopener">Fat Jar</a> 技术，简单的单模块 Java 应用或者 Spring Boot 应用均可被打包成一个自包含可运行的 Fat Jar，称之为 Ark 包；Ark 包内嵌 SOFAArk 类隔离容器，通过 <code>java -jar</code> 命令启动 Ark 包，SOFAArk 容器将优先启动，进而由容器负责启动各 Ark 插件和应用；</p>
+<h2 id="背景" class="article-heading"><a href="#背景" class="headerlink" title="背景"></a>背景<a class="article-anchor" href="#背景" aria-hidden="true"></a></h2><p>日常使用 Java 开发，常常会遇到包依赖冲突的问题，尤其当应用变得臃肿庞大，包冲突的问题也会变得更加棘手，导致各种各样的报错，例如 <code>LinkageError</code>, <code>NoSuchMethodError</code> 等；实际开发中，可以采用多种方法来解决包冲突问题，比较常见的是类似 Spring Boot 的做法，统一管理应用所有依赖包的版本，保证这些三方包不存在依赖冲突；这种做法只能有效避免包冲突问题，不能根本上解决包冲突的问题；如果某个应用的确需要在运行时使用两个相互冲突的包，例如 <code>protobuf2</code> 和 <code>protobuf3</code>，那么类似 Spring Boot 的做法依然解决不了问题。</p>
+<p>为了彻底解决包冲突的问题，需要借助类隔离机制，使用不同的 <code>ClassLoader</code> 加载不同版本的三方依赖，进而隔离包冲突问题； <code>OSGI</code> 作为业内最出名的类隔离框架，自然是可以被用于解决上述包冲突问题，但是 <code>OSGI</code> 框架太过臃肿，功能繁杂；为了解决包冲突问题，引入 <code>OSGI</code> 框架，有牛刀杀鸡之嫌，且反而使工程变得更加复杂，不利于开发；</p>
+<p>SOFAArk 专注于解决类隔离问题，采用轻量级的类隔离方案来解决日常经常遇到的包冲突问题，在蚂蚁金服内部服务于整个 <a href="https://github.com/alipay/sofa-boot" target="_blank" rel="noopener">SOFABoot</a> 技术体系，弥补 Spring Boot 没有的类隔离能力。实际上，SOFAArk 是一个通用的轻量级类隔离框架，并不限于 Spring Boot 应用，也可以和其他的 Java 开发框架集成； </p>
+<h2 id="原理" class="article-heading"><a href="#原理" class="headerlink" title="原理"></a>原理<a class="article-anchor" href="#原理" aria-hidden="true"></a></h2><p>SOFAArk 包含三个概念，<code>Ark Container</code>, <code>Ark Plugin</code> 和 <code>Ark Biz</code>; 运行时逻辑结构图如下:</p>
+<p><img src="https://cdn.yuque.com/lark/2018/png/590/1523868989241-f50695ed-dca0-4bf7-a6a9-afe07c2ade76.png" alt="image.png | center | 1310x1178"></p>
+<p>在介绍这三个概念之前，先介绍上述 <code>Ark</code> 包概念；<code>Ark</code> 包是满足特定目录格式要求的可运行 <code>Fat Jar</code>，使用官方提供的 <code>Maven</code> 插件 <code>sofa-ark-maven-plugin</code> 可以将工程应用打包成标准格式的 <code>Ark</code> 包；使用 <code>java -jar</code> 命令即可在 SOFAArk 容器之上启动应用；<code>Ark</code> 包通常包含 <code>Ark Container</code>、<code>Ark Plugin</code> 和 <code>Ark Biz</code>；以下我们针对这三个概念简单做下名词解释：</p>
+<ul>
+<li><p><code>Ark Container</code>: SOFAArk 容器，负责 <code>Ark</code> 包启动运行时的管理；<code>Ark Plugin</code> 和 <code>Ark Biz</code> 运行在 SOFAArk 容器之上；容器具备管理插件和应用的功能；容器启动成功后，会自动解析 classpath 包含的 <code>Ark Plugin</code> 和 <code>Ark Biz</code> 依赖，完成隔离加载并按优先级依次启动之；</p>
+</li>
+<li><p><code>Ark Plugin</code>: Ark 插件，满足特定目录格式要求的 <code>Fat Jar</code>，使用官方提供的 <code>Maven</code> 插件 <code>sofa-ark-plugin-maven-plugin</code> 可以将一个或多个普通的 <code>Java jar</code> 打包成一个标准格式的 <code>Ark Plugin</code>；<code>Ark Plugin</code> 会包含一份配置文件，通常包括插件类导入导出配置、资源导入导出配置、插件启动优先级等；运行时，SOFAArk 容器会使用独立的 <code>PluginClassLoader</code>加载插件，并根据插件配置构建类加载索引表、资源加载索引表，使插件和插件之间、插件和应用之间相互隔离；</p>
+</li>
+<li><p><code>Ark Biz</code>: Ark 应用模块，满足特定目录格式要求的 <code>Fat Jar</code>，使用官方提供的 <code>Maven</code> 插件 <code>sofa-ark-maven-plugin</code> 可以将工程应用打包成一个标准格式的 <code>Ark Biz</code>；<code>Ark Biz</code> 是工程应用以及其依赖包的组织单元，包含应用启动所需的所有依赖和配置；</p>
+</li>
+</ul>
+<p>运行 <code>Ark</code> 包，<code>Ark Container</code> 优先启动，容器自动解析 <code>Ark</code> 包中含有的 <code>Ark Plugin</code> 和 <code>Ark Biz</code>，并读取他们的配置信息，构建类和资源的加载索引表；然后使用独立的 <code>ClassLoader</code> 加载并按优先级配置依次启动；需要指出的是，<code>Ark Plugin</code> 优先 <code>Ark Biz</code> 被加载启动；<code>Ark Plugin</code> 之间是双向类索引关系，即可以相互委托对方加载所需的类和资源；<code>Ark Plugin</code> 和 <code>Ark Biz</code> 是单向类索引关系，即只允许 <code>Ark Biz</code> 索引 <code>Ark Plugin</code> 加载的类和资源，反之则不允许。</p>
+<h2 id="场景" class="article-heading"><a href="#场景" class="headerlink" title="场景"></a>场景<a class="article-anchor" href="#场景" aria-hidden="true"></a></h2><p>SOFAArk 初衷是为了解决包冲突问题，那什么情况下可以使用 SOFAArk 以及如何使用呢？ 假设如下场景，如果工程需要引入两个三方包：A 和 B，但是 A 需要依赖版本号为 0.1 的 C 包，而恰好 B 需要依赖版本号为 0.2 的 C 包，且 C 包的这两个版本无法兼容：</p>
+<p><img src="https://cdn.yuque.com/lark/2018/png/590/1523868150329-41ea3982-4783-49b0-a1e6-ffffddbe0886.png" alt="conflict"></p>
+<p>此时，即可使用 SOFAArk 解决该依赖冲突问题；只需要把 A 和版本为 0.1 的 C 包一起打包成一个 Ark 插件，然后让应用工程引入该插件依赖即可；</p>
+
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+        </div>
+      </div>
+    </div>
+    <div class="mask hidden"></div>
+  
+
+  <script src="https://gw.alipayobjects.com/as/g/lark/site-toc/2.0.9/toc.js"></script>
+<script>
+  $('#page-toc').generateToc({
+    contentContainer: $('.typo'),
+    hasFirstLevelHeader: false,
+    offsetTop: 0,
+    affix: {
+      bgColor: "transparent",
+    },
+  })
+</script>
+
+
+
+    </div>
+
+
+
+    <div class="ant-row footer">
+  <div class="footer-content">
+    <div class="ant-row footer-desc">
+      <div class="ant-col-8 ant-col-offset-2 footer-team">
+        <h4>SOFA</h4>
+        <p><a href="http://alipay.github.io/sofastack.github.io">首页</a></p>
+        <p><a href="http://alipay.github.io/sofastack.github.io/docs">文档</a></p>
+      </div>
+      <div class="ant-col-4 ant-col-offset-2 footer-friend">
+        <h4>社区</h4>
+        <p><a href="https://github.com/alipay">Github</a></p>
+        <p><a href="https://github.com/alipay/sofa-ark/issues">Issues</a></p>
+      </div>
+      <div class="ant-col-6 ant-col-offset-2 footer-contact">
+      
+      </div>
+    </div>
+    <div class="copyright">
+    </div>
+  </div>
+</div>
+</body>
+</html>

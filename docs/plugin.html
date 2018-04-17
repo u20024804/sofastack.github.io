@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="default">
+<head>
+	<meta name="generator" content="Hugo 0.24.1" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="base-url" content="/">
+    <link type="image/png" href="https://gw.alipayobjects.com/zos/rmsportal/tRXQtrTrncqqhetSGTQP.png" rel="shortcut icon" />
+    <base href="/">
+    <link rel="stylesheet" href="/sofastack.github.io/css/sofa.css" rel="stylesheet">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_18677_3gesaak2gctyb9.css">
+    <link href="//a.alipayobjects.com/g/lark/lark-markdown/1.3.18/default.css" rel="stylesheet">
+    <link href="https://gw.alipayobjects.com/os/skylark/KIxlVLTkLQVFFoYBWDbT.css" rel="stylesheet">
+    <link href="https://gw.alipayobjects.com/os/skylark/FEJbjjFlOklxrFRcJlEt.css" rel="stylesheet">
+    <title>sofastack</title>
+    <script src="https://gw.alipayobjects.com/os/skylark/lzusIxsuPvIxUYowbfNY.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://gw.alipayobjects.com/os/skylark/DNXLotCBHDrtZnOcOSgz.js" type="text/javascript" charset="utf-8"></script>
+  </head>
+<body data-url="/" class="theme1">
+    <div class="header">
+  <div>
+    <div class="header-wrapper">
+      <div class="header-logo">
+        <a href=/sofastack.github.io>
+          <img src="https://gw.alipayobjects.com/zos/rmsportal/tXhjeqVBFJnDSGScZrcW.png" alt="">
+        </a>
+      </div>
+      <ul class="sofa-menu ant-menu ant-menu-horizontal ant-menu-light ant-menu-root" role="menu">
+          <li class="ant-menu-item sofa-menu-item  ">
+              <div class="sofa-menu-item-text">
+                  <a href="/sofastack.github.io/docs">文档</a>
+                  <a href="https://github.com/alipay">Github</a>
+              </div>
+          </li>
+      </ul>
+      <div class="sofa-menu-right pull-right">
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="main">
+    <div class="pg-artical " id="pg-artical">
+        <div class="wrap">
+            <div class="nav-section">
+                <div class="navbar">
+                    <span class="larkicon larkicon-toc"></span>
+                </div>
+                <nav class="nav-container">
+                    <ul class="catalog">
+        <li class="current-book">
+          <span class="name">SOFA-ARK</span>
+        
+
+        </li>
+        
+        <aside id="sidebar" role="navigation">
+  <div class="inner">
+    <li class="nav-item depth1 "><span href="" class="">sidebar.docs.introduction</span></li><li class="nav-item depth2 "><a href="sofastack.github.io/docs/index.html" class="">sidebar.docs.overview</a></li><li class="nav-item depth1 "><span href="" class="">sidebar.docs.quick_start</span></li><li class="nav-item depth2 "><a href="sofastack.github.io/docs/ark-plugin-demo.html" class="">sidebar.docs.ark-plugin-demo</a></li><li class="nav-item depth2 "><a href="sofastack.github.io/docs/ark-demo.html" class="">sidebar.docs.ark-demo</a></li><li class="nav-item depth1 "><span href="" class="">sidebar.docs.user_guide</span></li><li class="nav-item depth2 "><a href="sofastack.github.io/docs/terminology.html" class="">sidebar.docs.terminology</a></li><li class="nav-item depth2 "><a href="sofastack.github.io/docs/ark-jar.html" class="">sidebar.docs.ark_jar</a></li><li class="nav-item depth2 "><a href="sofastack.github.io/docs/ark-plugin.html" class="">sidebar.docs.ark_plugin</a></li><li class="nav-item depth2 "><a href="sofastack.github.io/docs/ark-biz.html" class="">sidebar.docs.ark_biz</a></li><li class="nav-item depth1 "><span href="" class="">sidebar.docs.develop_guide</span></li><li class="nav-item depth2 "><a href="sofastack.github.io/docs/startup.html" class="">sidebar.docs.startup</a></li><li class="nav-item depth2 "><a href="sofastack.github.io/docs/plugin.html" class="">sidebar.docs.plugin</a></li><li class="nav-item depth2 "><a href="sofastack.github.io/docs/classloader.html" class="">sidebar.docs.classloader</a></li>
+  </div>
+</aside>
+      
+    </ul>
+  </nav>
+</div>
+        <div class="main-container">
+          <div id="page-toc"></div>
+          <div class="artical-section larksite">
+    <div class="doc-article">
+      <article class="doc-article-inner">
+        <div class="typo">
+          <h1 class="typo-title" itemprop="title">
+          Ark 容器插件机制
+          </h1>
+          <div class="typo-content">
+            <h2 id="Ark-插件启动" class="article-heading"><a href="#Ark-插件启动" class="headerlink" title="Ark 插件启动"></a>Ark 插件启动<a class="article-anchor" href="#Ark-插件启动" aria-hidden="true"></a></h2><p>Ark 中提供了插件启动的接口 <code>com.alipay.sofa.ark.spi.service.PluginActivator</code>  ，其定义如下：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">PluginActivator</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * Start Plugin</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> context plugin context</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@throws</span> ArkException</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">start</span><span class="params">(PluginContext context)</span> <span class="keyword">throws</span> ArkException</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * Stop Plugin</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> context</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@throws</span> ArkException</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">stop</span><span class="params">(PluginContext context)</span> <span class="keyword">throws</span> ArkException</span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>插件只需要实现此接口，并在 MANIFEST.MF 中配置 <code>activator</code> 属性，就会在启动时执行 <code>start</code> 方法，停止时执行 <code>stop</code> 方法</p>
+<h2 id="Ark-插件通信" class="article-heading"><a href="#Ark-插件通信" class="headerlink" title="Ark 插件通信"></a>Ark 插件通信<a class="article-anchor" href="#Ark-插件通信" aria-hidden="true"></a></h2><p>Ark 之间的通信是通过服务来完成的， 在上述启动接口方法的入参类型 <code>com.alipay.sofa.ark.spi.model.PluginContext</code> 中提供了发布服务和引用服务的接口</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">     <span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Publish Plugin Service</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> ifClass service interface</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> implObject service implement object</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> &lt;T&gt;</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line">&lt;T&gt; <span class="function">ServiceReference&lt;T&gt; <span class="title">publishService</span><span class="params">(Class&lt;T&gt; ifClass, T implObject)</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Get Service publish by plugin, when there are multiple services, return the highest priority plugin service</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> ifClass service interface</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> &lt;T&gt;</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return</span> service reference</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line">&lt;T&gt; <span class="function">ServiceReference&lt;T&gt; <span class="title">referenceService</span><span class="params">(Class&lt;T&gt; ifClass)</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Get Service publish  by one specific plugin</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> ifClass service interface</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> &lt;T&gt;</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> pluginName the name of the plugin which publish the service</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return</span> service reference</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line">&lt;T&gt; <span class="function">ServiceReference&lt;T&gt; <span class="title">referenceService</span><span class="params">(Class&lt;T&gt; ifClass, String pluginName)</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Get Service List publish by plugin</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> ifClass service interface</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> &lt;T&gt;</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line">&lt;T&gt; List&lt;ServiceReference&lt;T&gt;&gt; referenceServices(Class&lt;T&gt; ifClass);</span><br></pre></td></tr></table></figure>
+<p>插件服务是以接口为粒度的，针对同一个接口：</p>
+<ul>
+<li>每一个插件只允许发布一个服务，重复发布则会直接返回已经发布服务的引用</li>
+<li>当多有个插件发布服务时，若通过 <code>referenceService</code>  引用单个服务<ul>
+<li>当不指定 pluginName 时，则返回优先级最高的服务</li>
+<li>当指定 pluginName 时，则返回该插件发布的服务</li>
+</ul>
+</li>
+</ul>
+<p>返回的服务引用 <code>ServiceReference</code> 定义如下:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">public interface ServiceReference&lt;T&gt; &#123;</span><br><span class="line"></span><br><span class="line">    /**</span><br><span class="line">     * get Service Object</span><br><span class="line">     * @return service</span><br><span class="line">     */</span><br><span class="line">    T getService();</span><br><span class="line"></span><br><span class="line">    /**</span><br><span class="line">     * get Service Metadata</span><br><span class="line">     * @return</span><br><span class="line">     */</span><br><span class="line">    ServiceMetadata getServiceMetadata();</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">public interface ServiceMetadata &#123;</span><br><span class="line"></span><br><span class="line">    /**</span><br><span class="line">     * get Service Unique Name</span><br><span class="line">     * @return service name</span><br><span class="line">     */</span><br><span class="line">    String getServiceName();</span><br><span class="line"></span><br><span class="line">    /**</span><br><span class="line">     * get Service Interface Class</span><br><span class="line">     * @return interface class</span><br><span class="line">     */</span><br><span class="line">    Class&lt;?&gt; getInterfaceClass();</span><br><span class="line"></span><br><span class="line">    /**</span><br><span class="line">     * get ServiceProvider</span><br><span class="line">     * @return</span><br><span class="line">     */</span><br><span class="line">    ServiceProvider getServiceProvider();</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>其中通过</p>
+<ul>
+<li><code>getService()</code> 可以获取到服务的实体 (也即发布服务时的 implObject)</li>
+<li><code>getServiceMetadata()</code> 可以获取到服务的元数据信息，包括<ul>
+<li>服务名：即服务的接口名</li>
+<li>服务接口</li>
+<li>服务的提供方：包括提供方名字(插件名等)、提供方优先级(插件优先级)</li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+        </div>
+      </div>
+    </div>
+    <div class="mask hidden"></div>
+  
+
+  <script src="https://gw.alipayobjects.com/as/g/lark/site-toc/2.0.9/toc.js"></script>
+<script>
+  $('#page-toc').generateToc({
+    contentContainer: $('.typo'),
+    hasFirstLevelHeader: false,
+    offsetTop: 0,
+    affix: {
+      bgColor: "transparent",
+    },
+  })
+</script>
+
+
+
+    </div>
+
+
+
+    <div class="ant-row footer">
+  <div class="footer-content">
+    <div class="ant-row footer-desc">
+      <div class="ant-col-8 ant-col-offset-2 footer-team">
+        <h4>SOFA</h4>
+        <p><a href="http://alipay.github.io/sofastack.github.io">首页</a></p>
+        <p><a href="http://alipay.github.io/sofastack.github.io/docs">文档</a></p>
+      </div>
+      <div class="ant-col-4 ant-col-offset-2 footer-friend">
+        <h4>社区</h4>
+        <p><a href="https://github.com/alipay">Github</a></p>
+        <p><a href="https://github.com/alipay/sofa-ark/issues">Issues</a></p>
+      </div>
+      <div class="ant-col-6 ant-col-offset-2 footer-contact">
+      
+      </div>
+    </div>
+    <div class="copyright">
+    </div>
+  </div>
+</div>
+</body>
+</html>

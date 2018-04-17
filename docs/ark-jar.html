@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="default">
+<head>
+	<meta name="generator" content="Hugo 0.24.1" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="base-url" content="/">
+    <link type="image/png" href="https://gw.alipayobjects.com/zos/rmsportal/tRXQtrTrncqqhetSGTQP.png" rel="shortcut icon" />
+    <base href="/">
+    <link rel="stylesheet" href="/sofastack.github.io/css/sofa.css" rel="stylesheet">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_18677_3gesaak2gctyb9.css">
+    <link href="//a.alipayobjects.com/g/lark/lark-markdown/1.3.18/default.css" rel="stylesheet">
+    <link href="https://gw.alipayobjects.com/os/skylark/KIxlVLTkLQVFFoYBWDbT.css" rel="stylesheet">
+    <link href="https://gw.alipayobjects.com/os/skylark/FEJbjjFlOklxrFRcJlEt.css" rel="stylesheet">
+    <title>sofastack</title>
+    <script src="https://gw.alipayobjects.com/os/skylark/lzusIxsuPvIxUYowbfNY.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://gw.alipayobjects.com/os/skylark/DNXLotCBHDrtZnOcOSgz.js" type="text/javascript" charset="utf-8"></script>
+  </head>
+<body data-url="/" class="theme1">
+    <div class="header">
+  <div>
+    <div class="header-wrapper">
+      <div class="header-logo">
+        <a href=/sofastack.github.io>
+          <img src="https://gw.alipayobjects.com/zos/rmsportal/tXhjeqVBFJnDSGScZrcW.png" alt="">
+        </a>
+      </div>
+      <ul class="sofa-menu ant-menu ant-menu-horizontal ant-menu-light ant-menu-root" role="menu">
+          <li class="ant-menu-item sofa-menu-item  ">
+              <div class="sofa-menu-item-text">
+                  <a href="/sofastack.github.io/docs">文档</a>
+                  <a href="https://github.com/alipay">Github</a>
+              </div>
+          </li>
+      </ul>
+      <div class="sofa-menu-right pull-right">
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="main">
+    <div class="pg-artical " id="pg-artical">
+        <div class="wrap">
+            <div class="nav-section">
+                <div class="navbar">
+                    <span class="larkicon larkicon-toc"></span>
+                </div>
+                <nav class="nav-container">
+                    <ul class="catalog">
+        <li class="current-book">
+          <span class="name">SOFA-ARK</span>
+        
+
+        </li>
+        
+        <aside id="sidebar" role="navigation">
+  <div class="inner">
+    <li class="nav-item depth1 "><span href="" class="">sidebar.docs.introduction</span></li><li class="nav-item depth2 "><a href="sofastack.github.io/docs/index.html" class="">sidebar.docs.overview</a></li><li class="nav-item depth1 "><span href="" class="">sidebar.docs.quick_start</span></li><li class="nav-item depth2 "><a href="sofastack.github.io/docs/ark-plugin-demo.html" class="">sidebar.docs.ark-plugin-demo</a></li><li class="nav-item depth2 "><a href="sofastack.github.io/docs/ark-demo.html" class="">sidebar.docs.ark-demo</a></li><li class="nav-item depth1 "><span href="" class="">sidebar.docs.user_guide</span></li><li class="nav-item depth2 "><a href="sofastack.github.io/docs/terminology.html" class="">sidebar.docs.terminology</a></li><li class="nav-item depth2 "><a href="sofastack.github.io/docs/ark-jar.html" class="">sidebar.docs.ark_jar</a></li><li class="nav-item depth2 "><a href="sofastack.github.io/docs/ark-plugin.html" class="">sidebar.docs.ark_plugin</a></li><li class="nav-item depth2 "><a href="sofastack.github.io/docs/ark-biz.html" class="">sidebar.docs.ark_biz</a></li><li class="nav-item depth1 "><span href="" class="">sidebar.docs.develop_guide</span></li><li class="nav-item depth2 "><a href="sofastack.github.io/docs/startup.html" class="">sidebar.docs.startup</a></li><li class="nav-item depth2 "><a href="sofastack.github.io/docs/plugin.html" class="">sidebar.docs.plugin</a></li><li class="nav-item depth2 "><a href="sofastack.github.io/docs/classloader.html" class="">sidebar.docs.classloader</a></li>
+  </div>
+</aside>
+      
+    </ul>
+  </nav>
+</div>
+        <div class="main-container">
+          <div id="page-toc"></div>
+          <div class="artical-section larksite">
+    <div class="doc-article">
+      <article class="doc-article-inner">
+        <div class="typo">
+          <h1 class="typo-title" itemprop="title">
+          Ark 包
+          </h1>
+          <div class="typo-content">
+            <p>本小节将介绍标准 <code>Ark 包</code> 的目录结构，以及如何使用官方插件 <code>sofa-ark-maven-plugin</code> 打包并发布 <code>Ark 包</code>。</p>
+<h2 id="Maven-插件" class="article-heading"><a href="#Maven-插件" class="headerlink" title="Maven 插件"></a>Maven 插件<a class="article-anchor" href="#Maven-插件" aria-hidden="true"></a></h2><p>官方提供 <code>Maven</code> 插件 <code>sofa-ark-maven-plugin</code> 可以将普通 Java 工程或者 Spring Boot 工程打包成标准格式 <code>Ark 包</code> ；基于 <a href="https://docs.spring.io/spring-boot/docs/current/reference/html/executable-jar.html#executable-jar-jar-file-structure" target="_blank" rel="noopener">Fat Jar</a> 技术，使用 <code>java -jar</code> 命令可以直接启动 <code>Ark 包</code> 。 <code>Maven</code> 插件坐标为：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"> <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.alipay.sofa<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>sofa-ark-maven-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>0.2.0<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="Goals" class="article-heading"><a href="#Goals" class="headerlink" title="Goals"></a>Goals<a class="article-anchor" href="#Goals" aria-hidden="true"></a></h2><p><code>sofa-ark-maven-plugin</code> 插件提供 <code>goal: repackage</code>， 可以将工程打包成可执行的 <code>Ark 包</code>，如下配置：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">build</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.alipay.sofa<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>sofa-ark-maven-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">version</span>&gt;</span>0.2.0<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">executions</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">execution</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">id</span>&gt;</span>default-cli<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">goals</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">goal</span>&gt;</span>repackage<span class="tag">&lt;/<span class="name">goal</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">goals</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">excution</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">executions</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">            <span class="comment">&lt;!-- 配置信息 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">build</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="完整配置模板" class="article-heading"><a href="#完整配置模板" class="headerlink" title="完整配置模板"></a>完整配置模板<a class="article-anchor" href="#完整配置模板" aria-hidden="true"></a></h2><p>完整的 <code>sofa-ark-maven-plguin</code> 插件配置模板如下：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">plugins</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.alipay.sofa<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>sofa-ark-maven-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">version</span>&gt;</span>0.1.0<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">executions</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">execution</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">id</span>&gt;</span>default-cli<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">goals</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">goal</span>&gt;</span>repackage<span class="tag">&lt;/<span class="name">goal</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">goals</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line"></span><br><span class="line">                    <span class="comment">&lt;!--ark 包和 ark biz 的打包存放目录，默认为工程 build 目录--&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">outputDirectory</span>&gt;</span>../target<span class="tag">&lt;/<span class="name">outputDirectory</span>&gt;</span></span><br><span class="line"></span><br><span class="line">                    <span class="comment">&lt;!--生成 ark 包文件名称，默认为 $&#123;artifactId&#125;--&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">finalName</span>&gt;</span>demo-ark<span class="tag">&lt;/<span class="name">finalName</span>&gt;</span></span><br><span class="line"></span><br><span class="line">                    <span class="comment">&lt;!--是否跳过执行 goal:repackage，默认为false--&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">skip</span>&gt;</span>false<span class="tag">&lt;/<span class="name">skip</span>&gt;</span></span><br><span class="line"></span><br><span class="line">                    <span class="comment">&lt;!--是否打包、安装和发布 ark biz，详细参考 Ark Biz 文档，默认为false--&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">attach</span>&gt;</span>true<span class="tag">&lt;/<span class="name">attach</span>&gt;</span></span><br><span class="line"></span><br><span class="line">                    <span class="comment">&lt;!--设置 ark 包的 classifier，默认为空--&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">arkClassifier</span>&gt;</span>ark-classifier<span class="tag">&lt;/<span class="name">arkClassifier</span>&gt;</span></span><br><span class="line"></span><br><span class="line">                    <span class="comment">&lt;!--设置 ark biz 的 classifier，默认为 ark-biz--&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">bizClassifier</span>&gt;</span>ark-biz-classifier<span class="tag">&lt;/<span class="name">bizClassifier</span>&gt;</span></span><br><span class="line"></span><br><span class="line">                    <span class="comment">&lt;!--打包 ark biz 时，排除指定的包依赖；格式为: $&#123;groupId:artifactId&#125; 或者 $&#123;groupId:artifactId:classifier&#125;--&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">excludes</span>&gt;</span></span><br><span class="line">                        <span class="tag">&lt;<span class="name">exclude</span>&gt;</span>org.apache.commons:commons-lang3<span class="tag">&lt;/<span class="name">exclude</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;/<span class="name">excludes</span>&gt;</span></span><br><span class="line"></span><br><span class="line">                    <span class="comment">&lt;!--打包 ark biz 时，排除和指定 groupId 相同的包依赖--&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">excludeGroupIds</span>&gt;</span></span><br><span class="line">                        <span class="tag">&lt;<span class="name">excludeGroupId</span>&gt;</span>org.springframework<span class="tag">&lt;/<span class="name">excludeGroupId</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;/<span class="name">excludeGroupIds</span>&gt;</span></span><br><span class="line"></span><br><span class="line">                    <span class="comment">&lt;!--打包 ark biz 时，排除和指定 artifactId 相同的包依赖--&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">excludeArtifactIds</span>&gt;</span></span><br><span class="line">                        <span class="tag">&lt;<span class="name">excludeArtifactId</span>&gt;</span>sofa-ark-spi<span class="tag">&lt;/<span class="name">excludeArtifactId</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;/<span class="name">excludeArtifactIds</span>&gt;</span></span><br><span class="line">                    </span><br><span class="line">                    <span class="comment">&lt;!--打包 ark biz 时，配置不从 ark plugin 索引的类；默认情况下，ark biz 会优先索引所有 ark plugin 的导出类，</span></span><br><span class="line"><span class="comment">                    添加该配置后，ark biz 将只在ark biz内部加载该类，不再优先委托 ark plugin 加载--&gt;</span> </span><br><span class="line">                    <span class="tag">&lt;<span class="name">denyImportClasses</span>&gt;</span></span><br><span class="line">                        <span class="tag">&lt;<span class="name">class</span>&gt;</span>com.alipay.sofa.SampleClass1<span class="tag">&lt;/<span class="name">class</span>&gt;</span></span><br><span class="line">                        <span class="tag">&lt;<span class="name">class</span>&gt;</span>com.alipay.sofa.SampleClass2<span class="tag">&lt;/<span class="name">class</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;/<span class="name">denyImportClasses</span>&gt;</span></span><br><span class="line">                    </span><br><span class="line">                    <span class="comment">&lt;!--对应 denyImportClasses 配置，可以配置包级别--&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">denyImportPackages</span>&gt;</span></span><br><span class="line">                        <span class="tag">&lt;<span class="name">package</span>&gt;</span>com.alipay.sofa<span class="tag">&lt;/<span class="name">package</span>&gt;</span></span><br><span class="line">                        <span class="tag">&lt;<span class="name">package</span>&gt;</span>org.springframework<span class="tag">&lt;/<span class="name">package</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;/<span class="name">denyImportPackages</span>&gt;</span></span><br><span class="line">                    </span><br><span class="line">                    <span class="comment">&lt;!--打包 ark biz 时，配置不从 ark plugin 索引的资源；默认情况下，ark biz 会优先索引所有 ark plugin 的导出资源,</span></span><br><span class="line"><span class="comment">                    添加该配置后，ark biz 将只在ark biz内部寻找该资源，不在从 ark plugin 查找--&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">denyImportResources</span>&gt;</span></span><br><span class="line">                        <span class="tag">&lt;<span class="name">resource</span>&gt;</span>META-INF/spring/test1.xml<span class="tag">&lt;/<span class="name">resource</span>&gt;</span></span><br><span class="line">                        <span class="tag">&lt;<span class="name">resource</span>&gt;</span>META-INF/spring/test2.xml<span class="tag">&lt;/<span class="name">resource</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;/<span class="name">denyImportResources</span>&gt;</span></span><br><span class="line"></span><br><span class="line">                <span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">execution</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">executions</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">plugins</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>配置项含义如下：</p>
+<ul>
+<li><p><code>outputDirectory</code>: ark 包和 ark biz 的打包存放目录，默认为工程 build 目录;</p>
+</li>
+<li><p><code>finalName</code>: 生成 ark 包文件名称，默认为 ${artifactId};</p>
+</li>
+<li><p><code>skip</code>: 是否跳过执行 goal:repackage，默认为false;</p>
+</li>
+<li><p><code>attach</code>: 是否打包、安装和发布 ark biz，详细参考 Ark Biz 文档，默认为false;</p>
+</li>
+<li><p><code>arkClassifier</code>: 设置 ark 包的 classifier，默认为空;</p>
+</li>
+<li><p><code>bizClassifier</code>: 设置 ark biz 的 classifier，默认为 ark-biz;</p>
+</li>
+<li><p><code>excludes</code>: 打包 ark biz 时，排除指定的包依赖；格式为: ${groupId:artifactId} 或者 ${groupId:artifactId:classifier};</p>
+</li>
+<li><p><code>excludeGroupIds</code>: 打包 ark biz 时，排除和指定 groupId 相同的包依赖;</p>
+</li>
+<li><p><code>excludeArtifactIds</code>: 打包 ark biz 时，排除和指定 artifactId 相同的包依赖;</p>
+</li>
+<li><p><code>denyImportClasses</code>: 打包 ark biz 时，配置不从 ark plugin 索引的类；默认情况下，ark biz 会优先索引所有 ark plugin 的导出类，添加该配置后，ark biz 将只在ark biz内部加载该类，不再优先委托 ark plugin 加载;</p>
+</li>
+<li><p><code>denyImportPackages</code>: 对应 denyImportClasses 配置，可以配置包级别;</p>
+</li>
+<li><p><code>denyImportResources</code>: 打包 ark biz 时，配置不从 ark plugin 索引的资源；默认情况下，ark biz 会优先索引所有 ark plugin 的导出资源, 添加该配置后，ark biz 将只在ark biz内部寻找该资源，不在从 ark plugin 查找</p>
+</li>
+</ul>
+<h2 id="构建" class="article-heading"><a href="#构建" class="headerlink" title="构建"></a>构建<a class="article-anchor" href="#构建" aria-hidden="true"></a></h2><p>以 Spring Boot Web 工程为例，为了生成标准的 <code>Ark 包</code> ，只需要两步操作</p>
+<ul>
+<li>参考配置模板，在 Web 模块的 pom.xml 文件中配置 <code>sofa-ark-maven-plugin</code> 插件；</li>
+<li>在 Web 模块目录或应用根目录中敲击 <code>mvn pacakge</code> 命令，即可在配置的 <code>outputDirectory</code> 目录中生成 <code>Ark 包</code> 和 <code>Ark Biz</code> 文件；默认命名分别为 Web 模块 <code>${artifactId}</code> 和 <code>${artifactId}-ark-biz</code> ; 也可以分别通过 <code>arkClassifier</code> 和 <code>bizClassifier</code> 设置 classifier；敲击 <code>mvn install</code> 命令，则会安装 <code>Ark 包</code> 到本地仓库，如果设置了 <code>attach</code> 为 <code>true</code>, 会同时把 <code>ark biz</code> 安装到本地仓库；</li>
+</ul>
+<h2 id="发布" class="article-heading"><a href="#发布" class="headerlink" title="发布"></a>发布<a class="article-anchor" href="#发布" aria-hidden="true"></a></h2><p>在工程主 pom 中配置仓库地址，然后敲击 <code>mvn deploy</code>命令，即可发布该 <code>Ark 包</code>；需要强调的是，如果设置了 <code>attach</code> 为 <code>true</code>，<code>Ark Biz</code> 也会发布到仓库，此外 <code>Ark Biz</code> 发布包默认会带上 <code>classifier = ark-biz</code>，可以通过 <code>bizClassifier</code> 设置 <code>ark biz</code> 的 classifier ；</p>
+<h2 id="Ark-包典型目录结构" class="article-heading"><a href="#Ark-包典型目录结构" class="headerlink" title="Ark 包典型目录结构"></a>Ark 包典型目录结构<a class="article-anchor" href="#Ark-包典型目录结构" aria-hidden="true"></a></h2><p>下面是一个普通的 <code>Spring Boot Web</code> 应用打包生成的 <code>Ark 包</code> 目录结构</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── META-INF</span><br><span class="line">│   └── MANIFEST.MF</span><br><span class="line">├── SOFA-ARK</span><br><span class="line">│   ├── biz</span><br><span class="line">│   │   └── sofa-boot-demo-web-1.0-SNAPSHOT-sofa-ark-biz.jar</span><br><span class="line">│   ├── container</span><br><span class="line">│   │   ├── META-INF</span><br><span class="line">│   │   │   └── MANIFEST.MF</span><br><span class="line">│   │   ├── com</span><br><span class="line">│   │   │   └── alipay</span><br><span class="line">│   │   │       └── sofa</span><br><span class="line">│   │   │           └── ark</span><br><span class="line">│   │   └── lib</span><br><span class="line">│   │       ├── aopalliance-1.0.jar</span><br><span class="line">│   │       ├── guava-16.0.1.jar</span><br><span class="line">│   │       ├── guice-4.0.jar</span><br><span class="line">│   │       ├── guice-multibindings-4.0.jar</span><br><span class="line">│   │       ├── javax.inject-1.jar</span><br><span class="line">│   │       ├── log4j-1.2.17.jar</span><br><span class="line">│   │       ├── slf4j-api-1.7.21.jar</span><br><span class="line">│   │       ├── slf4j-log4j12-1.7.21.jar</span><br><span class="line">│   │       ├── sofa-ark-archive-0.1.0.jar</span><br><span class="line">│   │       ├── sofa-ark-common-0.1.0.jar</span><br><span class="line">│   │       ├── sofa-ark-container-0.1.0.jar</span><br><span class="line">│   │       ├── sofa-ark-exception-0.1.0.jar</span><br><span class="line">│   │       ├── sofa-ark-spi-0.1.0.jar</span><br><span class="line">│   │       └── sofa-common-tools-1.0.11.jar</span><br><span class="line">│   └── plugin</span><br><span class="line">│       └── sofa-ark-rpc-plugin-2.2.5-ark-plugin.jar</span><br><span class="line">└── com</span><br><span class="line">    └── alipay</span><br><span class="line">        └── sofa</span><br><span class="line">            └── ark</span><br><span class="line">                ├── bootstrap</span><br><span class="line">                │   ├── ArkLauncher.class</span><br><span class="line">                │   ├── ClasspathLauncher$ClassPathArchive.class</span><br><span class="line">                │   ├── ClasspathLauncher.class</span><br><span class="line">                │   ├── ContainerClassLoader.class</span><br><span class="line">                │   ├── EntryMethod.class</span><br><span class="line">                │   ├── ExecutableArchiveLauncher.class</span><br><span class="line">                │   ├── Launcher.class</span><br><span class="line">                │   ├── MainMethodRunner.class</span><br><span class="line">                │   └── SofaArkBootstrap.class</span><br><span class="line">                ├── loader</span><br><span class="line">                │   ├── DirectoryBizModuleArchive.class</span><br><span class="line">                │   ├── ExecutableArkBizJar$1.class</span><br><span class="line">                │   ├── ExecutableArkBizJar$2.class</span><br><span class="line">                │   ├── ExecutableArkBizJar$3.class</span><br><span class="line">                │   ├── ExecutableArkBizJar.class</span><br><span class="line">                │   ├── JarBizModuleArchive$1.class</span><br><span class="line">                │   ├── JarBizModuleArchive.class</span><br><span class="line">                │   ├── JarContainerArchive$1.class</span><br><span class="line">                │   ├── JarContainerArchive.class</span><br><span class="line">                │   ├── JarPluginArchive$1.class</span><br><span class="line">                │   ├── JarPluginArchive.class</span><br><span class="line">                │   ├── archive</span><br><span class="line">                │   ├── data</span><br><span class="line">                │   └── jar</span><br><span class="line">                └── spi</span><br><span class="line">                    └── archive</span><br></pre></td></tr></table></figure>
+<p>上述目录结构相关文件和目录说明如下：</p>
+<ul>
+<li><p><code>META-INF/MANIFEST.MF</code> : 记录 <code>Ark</code> 包元信息，其中最关键的信息是 <code>Ark</code> 包的启动入口类 <code>Main-Class</code> ；文件内容类似如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">Manifest-Version: 1.0</span><br><span class="line">Implementation-Title: sofa-ark-all</span><br><span class="line">Implementation-Version: 0.1.0</span><br><span class="line">Archiver-Version: Plexus Archiver</span><br><span class="line">Built-By: qilong.zql</span><br><span class="line">Sofa-Ark-Version: 0.1.0</span><br><span class="line">Specification-Title: sofa-ark-all</span><br><span class="line">Implementation-Vendor-Id: com.alipay.sofa</span><br><span class="line">Main-Class: com.alipay.sofa.ark.bootstrap.ArkLauncher</span><br><span class="line">Ark-Container-Root: SOFA-ARK/container/</span><br><span class="line">Created-By: Apache Maven 3.2.5</span><br><span class="line">Build-Jdk: 1.8.0_101</span><br><span class="line">Specification-Version: 0.1.0</span><br><span class="line">ArkVersion: 0.1.0</span><br><span class="line">Timestamp: 2018-03-13T18:13:06Z</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>可以看到，<code>Ark 包</code> 启动入口类是 <code>com.alipay.sofa.ark.bootstrap.ArkLauncher</code></p>
+<ul>
+<li><p><code>com/alipay/sofa/ark/*</code> : 存放使用 <code>java -jar</code> 命令启动 <code>Ark 包</code>  所必需的引导类；</p>
+</li>
+<li><p><code>SOFA-ARK/container</code> : 存放 <code>ark container</code> 容器依赖包，实际上是如下依赖包的解压目录；</p>
+</li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.alipay.sofa<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>sofa-ark-all<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>0.2.0<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><p><code>SOFA-ARK/biz</code> : 存放所有的 <code>Ark Biz</code> 包，因为 demo 工程中没有依赖其他的 <code>Ark Biz</code> , 因此只有自身的 <code>Ark Biz</code></p>
+</li>
+<li><p><code>SOFA-ARK/plugin</code> : 存放应用依赖的所有 <code>Ark Plugin</code> 包，demo 工程只依赖一个 rpc <code>Ark Plugin</code></p>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+        </div>
+      </div>
+    </div>
+    <div class="mask hidden"></div>
+  
+
+  <script src="https://gw.alipayobjects.com/as/g/lark/site-toc/2.0.9/toc.js"></script>
+<script>
+  $('#page-toc').generateToc({
+    contentContainer: $('.typo'),
+    hasFirstLevelHeader: false,
+    offsetTop: 0,
+    affix: {
+      bgColor: "transparent",
+    },
+  })
+</script>
+
+
+
+    </div>
+
+
+
+    <div class="ant-row footer">
+  <div class="footer-content">
+    <div class="ant-row footer-desc">
+      <div class="ant-col-8 ant-col-offset-2 footer-team">
+        <h4>SOFA</h4>
+        <p><a href="http://alipay.github.io/sofastack.github.io">首页</a></p>
+        <p><a href="http://alipay.github.io/sofastack.github.io/docs">文档</a></p>
+      </div>
+      <div class="ant-col-4 ant-col-offset-2 footer-friend">
+        <h4>社区</h4>
+        <p><a href="https://github.com/alipay">Github</a></p>
+        <p><a href="https://github.com/alipay/sofa-ark/issues">Issues</a></p>
+      </div>
+      <div class="ant-col-6 ant-col-offset-2 footer-contact">
+      
+      </div>
+    </div>
+    <div class="copyright">
+    </div>
+  </div>
+</div>
+</body>
+</html>

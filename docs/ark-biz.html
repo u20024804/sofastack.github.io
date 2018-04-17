@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="default">
+<head>
+	<meta name="generator" content="Hugo 0.24.1" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="base-url" content="/">
+    <link type="image/png" href="https://gw.alipayobjects.com/zos/rmsportal/tRXQtrTrncqqhetSGTQP.png" rel="shortcut icon" />
+    <base href="/">
+    <link rel="stylesheet" href="/sofastack.github.io/css/sofa.css" rel="stylesheet">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_18677_3gesaak2gctyb9.css">
+    <link href="//a.alipayobjects.com/g/lark/lark-markdown/1.3.18/default.css" rel="stylesheet">
+    <link href="https://gw.alipayobjects.com/os/skylark/KIxlVLTkLQVFFoYBWDbT.css" rel="stylesheet">
+    <link href="https://gw.alipayobjects.com/os/skylark/FEJbjjFlOklxrFRcJlEt.css" rel="stylesheet">
+    <title>sofastack</title>
+    <script src="https://gw.alipayobjects.com/os/skylark/lzusIxsuPvIxUYowbfNY.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://gw.alipayobjects.com/os/skylark/DNXLotCBHDrtZnOcOSgz.js" type="text/javascript" charset="utf-8"></script>
+  </head>
+<body data-url="/" class="theme1">
+    <div class="header">
+  <div>
+    <div class="header-wrapper">
+      <div class="header-logo">
+        <a href=/sofastack.github.io>
+          <img src="https://gw.alipayobjects.com/zos/rmsportal/tXhjeqVBFJnDSGScZrcW.png" alt="">
+        </a>
+      </div>
+      <ul class="sofa-menu ant-menu ant-menu-horizontal ant-menu-light ant-menu-root" role="menu">
+          <li class="ant-menu-item sofa-menu-item  ">
+              <div class="sofa-menu-item-text">
+                  <a href="/sofastack.github.io/docs">文档</a>
+                  <a href="https://github.com/alipay">Github</a>
+              </div>
+          </li>
+      </ul>
+      <div class="sofa-menu-right pull-right">
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="main">
+    <div class="pg-artical " id="pg-artical">
+        <div class="wrap">
+            <div class="nav-section">
+                <div class="navbar">
+                    <span class="larkicon larkicon-toc"></span>
+                </div>
+                <nav class="nav-container">
+                    <ul class="catalog">
+        <li class="current-book">
+          <span class="name">SOFA-ARK</span>
+        
+
+        </li>
+        
+        <aside id="sidebar" role="navigation">
+  <div class="inner">
+    <li class="nav-item depth1 "><span href="" class="">sidebar.docs.introduction</span></li><li class="nav-item depth2 "><a href="sofastack.github.io/docs/index.html" class="">sidebar.docs.overview</a></li><li class="nav-item depth1 "><span href="" class="">sidebar.docs.quick_start</span></li><li class="nav-item depth2 "><a href="sofastack.github.io/docs/ark-plugin-demo.html" class="">sidebar.docs.ark-plugin-demo</a></li><li class="nav-item depth2 "><a href="sofastack.github.io/docs/ark-demo.html" class="">sidebar.docs.ark-demo</a></li><li class="nav-item depth1 "><span href="" class="">sidebar.docs.user_guide</span></li><li class="nav-item depth2 "><a href="sofastack.github.io/docs/terminology.html" class="">sidebar.docs.terminology</a></li><li class="nav-item depth2 "><a href="sofastack.github.io/docs/ark-jar.html" class="">sidebar.docs.ark_jar</a></li><li class="nav-item depth2 "><a href="sofastack.github.io/docs/ark-plugin.html" class="">sidebar.docs.ark_plugin</a></li><li class="nav-item depth2 "><a href="sofastack.github.io/docs/ark-biz.html" class="">sidebar.docs.ark_biz</a></li><li class="nav-item depth1 "><span href="" class="">sidebar.docs.develop_guide</span></li><li class="nav-item depth2 "><a href="sofastack.github.io/docs/startup.html" class="">sidebar.docs.startup</a></li><li class="nav-item depth2 "><a href="sofastack.github.io/docs/plugin.html" class="">sidebar.docs.plugin</a></li><li class="nav-item depth2 "><a href="sofastack.github.io/docs/classloader.html" class="">sidebar.docs.classloader</a></li>
+  </div>
+</aside>
+      
+    </ul>
+  </nav>
+</div>
+        <div class="main-container">
+          <div id="page-toc"></div>
+          <div class="artical-section larksite">
+    <div class="doc-article">
+      <article class="doc-article-inner">
+        <div class="typo">
+          <h1 class="typo-title" itemprop="title">
+          Ark Biz
+          </h1>
+          <div class="typo-content">
+            <p>本小节将介绍 <code>Ark Biz</code> 目录结构，以及如何使用官方插件 <code>sofa-ark-maven-plugin</code> 打包并发布 <code>Ark Biz</code>。</p>
+<p><code>Ark Biz</code> 包和 <code>Ark 包</code> 都是使用 Maven 插件 <code>sofa-ark-maven-plugin</code> 打包生成；工程应用在配置该插件时，默认情况下只会打包发布 <code>Ark 包</code>， 只有在配置参数 <code>attach</code> 为 true 时，才会打包发布 <code>Ark Biz</code>：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">build</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.alipay.sofa<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>sofa-ark-maven-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">version</span>&gt;</span>0.2.0<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">executions</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">execution</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">id</span>&gt;</span>default-cli<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">goals</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">goal</span>&gt;</span>repackage<span class="tag">&lt;/<span class="name">goal</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">goals</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">excution</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">executions</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">attach</span>&gt;</span>false<span class="tag">&lt;/<span class="name">attach</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">build</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>那 <code>Ark Biz</code> 和 <code>Ark 包</code> 有什么区别呢？ 简单来说，<code>Ark Biz</code> 是工程应用所有资源的组织单元，它包含了应用启动所需的所有资源，详细可参考下文描述的 <code>Ark Biz</code> 目录格式；而工程应用打出来的 <code>Ark 包</code>，是一个通过 <code>java -jar</code> 启动，运行在 SOFAArk 容器的 Fat Jar，不仅包含应用工程对应的 <code>Ark Biz</code>，也包含 <code>Ark Container</code>，以及应用依赖的 <code>Ark Plugin</code>；</p>
+<p>通常情况，只需要发布 <code>Ark 包</code> 即可，但是 SOFAArk 是支持运行多个 <code>Ark Biz</code>的，因此如果开发者希望自己应用的 <code>Ark Biz</code> 包能够被其他应用直接当成 Jar 包依赖，进而运行在同一个 SOFAArk 容器之上，那么就需要打包发布 <code>Ark 包</code>；</p>
+<h2 id="Ark-Biz-典型目录结构" class="article-heading"><a href="#Ark-Biz-典型目录结构" class="headerlink" title="Ark-Biz 典型目录结构"></a>Ark-Biz 典型目录结构<a class="article-anchor" href="#Ark-Biz-典型目录结构" aria-hidden="true"></a></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── META-INF</span><br><span class="line">│   ├── MANIFEST.MF</span><br><span class="line">│   ├── maven</span><br><span class="line">│   │   └── me.qlong.tech</span><br><span class="line">│   │       └── sofa-boot-demo3-web</span><br><span class="line">│   │           ├── pom.properties</span><br><span class="line">│   │           └── pom.xml</span><br><span class="line">│   └── sofa-boot-demo3</span><br><span class="line">│       └── sofa-boot-demo3-web.xml</span><br><span class="line">├── com</span><br><span class="line">│   └── alipay</span><br><span class="line">│       └── sofa</span><br><span class="line">│           └── ark</span><br><span class="line">│               └── biz</span><br><span class="line">│                   └── mark</span><br><span class="line">├── config</span><br><span class="line">│   ├── application-dev.properties</span><br><span class="line">│   ├── application-test.properties</span><br><span class="line">│   └── application.properties</span><br><span class="line">├── lib</span><br><span class="line">│   ├── spring-beans-4.3.4.RELEASE.jar</span><br><span class="line">│   ├── spring-boot-1.4.2.RELEASE.jar</span><br><span class="line">│   ├── spring-boot-autoconfigure-1.4.2.RELEASE.jar</span><br><span class="line">│   ├── spring-boot-devtools-1.4.2.RELEASE.jar</span><br><span class="line">│   ├── spring-boot-starter-1.4.2.RELEASE.jar</span><br><span class="line">│   ├── spring-boot-starter-logging-1.4.2.RELEASE.jar</span><br><span class="line">│   ├── spring-boot-starter-tomcat-1.4.2.RELEASE.jar</span><br><span class="line">│   ├── spring-boot-starter-web-1.4.2.RELEASE.jar</span><br><span class="line">│   ├── spring-context-4.3.4.RELEASE.jar</span><br><span class="line">│   ├── spring-core-4.3.4.RELEASE.jar</span><br><span class="line">│   ├── spring-expression-4.3.4.RELEASE.jar</span><br><span class="line">│   ├── spring-web-4.3.4.RELEASE.jar</span><br><span class="line">│   ├── ...</span><br><span class="line">│   ├── ...</span><br><span class="line">│   ├── ...</span><br><span class="line">│   └── velocity-1.7.jar</span><br><span class="line">├── logback-spring.xml</span><br><span class="line">├── me</span><br><span class="line">│   └── qlong</span><br><span class="line">│       └── tech</span><br><span class="line">│           └── SOFABootWebSpringApplication.class</span><br><span class="line">└── static</span><br><span class="line">    └── index.html</span><br></pre></td></tr></table></figure>
+<p>上述目录结构相关文件和目录说明如下：</p>
+<p>普通的 Java 工程或者 Spring Boot Core/Web 工程都可以打包成 <code>Ark Biz</code>；<code>Ark Biz</code> 没有固定的目录格式，它只是在原来 Jar 包结构基础上新增两个目录文件：</p>
+<ul>
+<li><p><code>com/alipay/sofa/ark/biz/mark</code> : 标记文件，标记该 Jar 包是 <code>sofa-ark-maven-plugin</code> 打包生成的 <code>Ark Biz</code> 文件；</p>
+</li>
+<li><p><code>lib/</code> : lib 目录存放工程应用的三方依赖，</p>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+        </div>
+      </div>
+    </div>
+    <div class="mask hidden"></div>
+  
+
+  <script src="https://gw.alipayobjects.com/as/g/lark/site-toc/2.0.9/toc.js"></script>
+<script>
+  $('#page-toc').generateToc({
+    contentContainer: $('.typo'),
+    hasFirstLevelHeader: false,
+    offsetTop: 0,
+    affix: {
+      bgColor: "transparent",
+    },
+  })
+</script>
+
+
+
+    </div>
+
+
+
+    <div class="ant-row footer">
+  <div class="footer-content">
+    <div class="ant-row footer-desc">
+      <div class="ant-col-8 ant-col-offset-2 footer-team">
+        <h4>SOFA</h4>
+        <p><a href="http://alipay.github.io/sofastack.github.io">首页</a></p>
+        <p><a href="http://alipay.github.io/sofastack.github.io/docs">文档</a></p>
+      </div>
+      <div class="ant-col-4 ant-col-offset-2 footer-friend">
+        <h4>社区</h4>
+        <p><a href="https://github.com/alipay">Github</a></p>
+        <p><a href="https://github.com/alipay/sofa-ark/issues">Issues</a></p>
+      </div>
+      <div class="ant-col-6 ant-col-offset-2 footer-contact">
+      
+      </div>
+    </div>
+    <div class="copyright">
+    </div>
+  </div>
+</div>
+</body>
+</html>
